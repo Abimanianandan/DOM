@@ -6,7 +6,7 @@ const para=document.createElement("p")
 para.setAttribute("id","description");
 para.innerHTML="create a calculator using dom"
 const container = document.createElement("div");
-const calculator=document.createElement("div")
+const calculator=document.createElement("div");
 const output = document.createElement("input");
 const button1 = document.createElement("button");
 const button2 = document.createElement("button");

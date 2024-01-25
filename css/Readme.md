@@ -1,71 +1,73 @@
-// create element:-
 
-const container = document.createElement("div");
-const output = document.createElement("input");
-const button1 = document.createElement("button");
-const button2 = document.createElement("button");
-const button3 = document.createElement("button");
-const button4 = document.createElement("button");
-const button5 = document.createElement("button");
-const button6 = document.createElement("button");
-const button7 = document.createElement("button");
-const button8 = document.createElement("button");
-const button9 = document.createElement("button");
-const button10 = document.createElement("button");
-const button11 = document.createElement("button");
-const button12 = document.createElement("button");
-const button13 = document.createElement("button");
-const button14 = document.createElement("button");
-const button15 = document.createElement("button");
-const button16 = document.createElement("button");
-const button17 = document.createElement("button");
-const button18 = document.createElement("button");
-const button19 = document.createElement("button");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: pink; 
+    font-family: sans-serif;
+} 
+h1{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+p{
+    
+        display: flex;
+        justify-content: center;
+        color: blueviolet;
+    
+}
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calculator{
+   display: grid;
+   grid-template-columns: repeat(4,68px);
+   box-shadow: inset 5px 5px 12px #ffffff,
+   5px 5px 12px rgba(0,0,0,.16);
+   border-radius: 30px;
+   padding: 15px;
+   background: #ffffff;
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px rgba(0, 0, 0, .16);
+    
+    border-radius: 30px;
+    color: rgb(70, 70, 70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;    
+}
 
+button{
+    border: none;
+    width: 48px;
+    height: 48px;
+    margin: 8px;
+    border-radius: 50%;
+    background-color: #ecf0f3;
+    color: black;
+    font-size: 16px;
+    box-shadow: -5px -5px 12px #ffffff,
+                 5px 5px 12px rgba(0,0,0,16);
+    cursor: pointer;
+}
 
-
-// add text content:-
-
-button1.innerText = "1";
-button2.innerText = "2";
-button3.innerText = "3";
-button4.innerText = "4";
-button5.innerText = "5";
-button6.innerText = "6";
-button7.innerText = "7";
-button8.innerText = "8";
-button9.innerText = "9";
-button10.innerText = "0";
-button11.innerText = "00";
-button12.innerText = ""="";
-button13.innerText =  "+";
-button14.innerText = "-";
-button15.innerText = "C";
-button16.innerText = "/";
-button17.innerText = "X";
-button18.innerText = "<--";
-button19.innerText = ".";
-// append element:-
-document.body.append(
-  container,
-  output,
-  button1,
-  button2,
-  button3,
-  button4,
-  button5,
-  button6,
-  button7,
-  button8,
-  button9,
-  button10,
-  button11,
-  button12,
-  button13,
-  button14,
-  button15,
-  button16,
-  button17,
-  button18,
-  button19
-);
+#equal{
+    background-color: #ecf0f3;
+    width: 115px;
+    border-radius: 40px;
+    box-shadow: -5px -5px 12px #ffffff,
+             5px 5px 12px rgba(0,0,0,16);
+}
